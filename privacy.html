@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi — Stickman Studio</title>
+<meta name="description" content="Kebijakan privasi Stickman Studio untuk aplikasi OAuth yang mengakses YouTube Data API v3.">
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem; line-height: 1.65; }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .tag { color: #5f6368; margin-top: 0; }
+  a { color: #1a73e8; }
+  table { border-collapse: collapse; width: 100%; margin-top: .75rem; }
+  th, td { border: 1px solid #dadce0; padding: .5rem .6rem; text-align: left; vertical-align: top;
+           font-size: .93rem; }
+  th { background: #f1f3f4; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #dadce0;
+           font-size: .9rem; color: #5f6368; }
+</style>
+</head>
+<body>
+
+<h1>Kebijakan Privasi</h1>
+<p class="tag">Stickman Studio — aplikasi OAuth untuk YouTube Data API v3.<br>
+Terakhir diperbarui: 12 November 2026.</p>
+
+<h2>1. Siapa kami</h2>
+<p>
+  Stickman Studio adalah aplikasi internal milik operator yang mengoperasikan
+  kanal YouTube berbahasa Indonesia. Kontak untuk semua hal terkait privasi:
+  <a href="mailto:crmedia2021@gmail.com">crmedia2021@gmail.com</a>.
+</p>
+
+<h2>2. Data yang kami akses</h2>
+<p>
+  Aplikasi ini memakai <em>token OAuth</em> milik akun Google yang Anda setujui.
+  Token tersebut hanya berlaku untuk kanal yang Anda otorisasi dan hanya digunakan
+  untuk menjalankan pengunggahan serta pengelolaan konten.
+</p>
+<table>
+  <tr><th>Cakupan (scope)</th><th>Gunanya</th></tr>
+  <tr><td><code>.../auth/youtube.readonly</code></td>
+      <td>Membaca metadata kanal dan status unggahan, untuk memverifikasi akun dan
+          menampilkan hasil.</td></tr>
+  <tr><td><code>.../auth/youtube.upload</code></td>
+      <td>Mengunggah berkas video ke kanal dan menulis metadata video (judul,
+          deskripsi, tag, thumbnail).</td></tr>
+</table>
+<p>
+  Tidak ada cakupan <em>restricted</em> (misalnya Gmail atau Drive penuh) yang
+  diminta. Aplikasi ini tidak membaca isi video yang sudah ada di akun Anda
+  selain metadata yang diperlukan untuk pengunggahan.
+</p>
+
+<h2>3. Data yang kami simpan</h2>
+<p>
+  Aplikasi menyimpan hanya yang berikut, di server studio:
+</p>
+<ul>
+  <li>alamat email Google yang mengotorisasi (sebagai pengenal akun),</li>
+  <li>identitas kanal YouTube dan ID video untuk rekaman kerja,</li>
+  <li>token OAuth yang telah dienkripsi, untuk memperpanjang akses secara
+      otomatis.</li>
+</ul>
+<p>
+  Token tidak pernah ditampilkan di halaman web publik dan tidak dibagikan ke
+  pihak ketiga mana pun.
+</p>
+
+<h2>4. Bagaimana data digunakan</h2>
+<p>
+  Data hanya digunakan untuk mempublikasikan video milik studio sendiri, menjaga
+  daftar akun yang terkelola, dan menindaklanjuti permintaan penghapusan.
+  Kami tidak menjual, menyewakan, atau memberikan data kepada pihak ketiga.
+</p>
+
+<h2>5. Berapa lama data disimpan</h2>
+<p>
+  Token OAuth disimpan selama kanal masih dikelola oleh studio. Ketika Anda
+  mencabut akses di <a href="https://myaccount.google.com/permissions">pengaturan
+  izin Google</a> atau meminta penghapusan, token dihapus dari penyimpanan studio.
+</p>
+
+<h2>6. Hak Anda</h2>
+<p>
+  Anda dapat mencabut akses kapan saja melalui halaman izin akun Google Anda.
+  Untuk permintaan penghapusan data, hak atas data, atau salinan data yang
+  disimpan studio, hubungi <a href="mailto:crmedia2021@gmail.com">crmedia2021@gmail.com</a>.
+</p>
+
+<h2>7. Perubahan kebijakan</h2>
+<p>
+  Perubahan pada kebijakan ini akan diperbarui di halaman ini dengan tanggal
+  revisi yang baru.
+</p>
+
+<hr>
+<h2>Privacy Policy (English summary)</h2>
+<p>
+  Stickman Studio is an internal tool that publishes videos to the studio's own
+  YouTube channels. After you grant access, we read your channel metadata and
+  upload video files with their metadata (title, description, tags, thumbnail).
+  We request only the <code>youtube.readonly</code> and <code>youtube.upload</code>
+  scopes — no restricted scopes. Tokens are stored encrypted on the studio server,
+  are never published, and are never shared with third parties. You can revoke
+  access at any time from your Google account permissions page, and you can ask
+  for deletion by writing to <a href="mailto:crmedia2021@gmail.com">crmedia2021@gmail.com</a>.
+</p>
+
+<footer>
+  <p>© Stickman Studio · <a href="index.html">Beranda</a> ·
+     <a href="terms.html">Ketentuan Layanan</a></p>
+</footer>
+
+</body>
+</html>
